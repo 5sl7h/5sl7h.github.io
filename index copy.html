@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Test</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 3%;
+      background-color: #f0f0f0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    .background-container {
+      background: url('1483451.jpg') center/cover no-repeat;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -2;
+    }
+
+    .container {
+      position: relative;
+      background: black;
+      width: 90%;
+      border-radius: 25px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+      color: white;
+      font-family: serif;
+      text-align: center;
+      padding: 1%;
+    }
+
+    .container::before {
+      content: "";
+      position: absolute;
+      top: -4px;
+      left: -4px;
+      right: -4px;
+      bottom: -4px;
+      border-radius: 25px;
+      background: linear-gradient(90deg, #3e3e3e, #e0e0e0 50%, #3e3e3e);
+      z-index: -1;
+    }
+
+    .text-image-container {
+      display: flex;
+      align-items: center;
+      position: relative;
+    }
+
+    .text-content {
+      font-size: 1.2rem;
+      margin: 5px;
+      flex: 1;
+    }
+
+    @media (max-width: 530px) {
+      .text-content {
+        text-align: left;
+      }
+      .image-content {
+        position: relative;
+        margin-left: 10px;
+        transform: none;
+      }
+    }
+
+    @media (max-width: 350px) {
+      .image-content {
+        display: none;
+      }
+      .text-image-container {
+        justify-content: center;
+      }
+      .text-content {
+        text-align: center;
+        max-width: 100%;
+      }
+    }
+
+    .solid-line {
+      width: 100%;
+      height: 2px;
+      background: linear-gradient(to right, rgba(62, 62, 62, 0), #3e3e3e, #e0e0e0, #3e3e3e, rgba(62, 62, 62, 0));
+      margin: 20px 0;
+    }
+
+    .vertical-line {
+      position: relative;
+      height: 100%;
+      width: 2px;
+      background: linear-gradient(to bottom, rgba(62, 62, 62, 0), #3e3e3e, #e0e0e0, #3e3e3e, rgba(62, 62, 62, 0));
+    }
+
+    .vertical-line-container {
+      position: relative;
+      width: 100%;
+      height: 800px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+
+    .left-text,
+    .right-text {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 50%;
+      text-align: center;
+      font-size: 1.2rem;
+    }
+
+    .left-text {
+      left: 0;
+    }
+
+    .right-text {
+      right: 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="background-container"></div>
+  <div class="container">
+    <div class="text-image-container">
+      <div class="text-content">
+        <h1>The Test</h1>
+      </div>
+<div class="solid-line">
+
+
+
+
+      </div>
+</body>
+</html>
